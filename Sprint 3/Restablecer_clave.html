@@ -5,52 +5,57 @@
 </head>
 <body>
 <center><H3><p style="border: ridge #9c9b9b 2px;">Restablecer contraseña</p></H3><br>
-<table>      
-    <tr>
-        <td><button onclick="window.location.href='Index.html'">Inicio</button></td>
-        <td><button onclick="window.location.href='Registro_datos.html'">Registro</button></td=>
-        <td><button onclick="window.location.href='Inicio_sesion.html'">Inicio de sesión</button></td=>
-        <td><button onclick="window.location.href='Ingreso_IMC.html'">Formulario IMC</button></td=>
-    </tr>
-<table>
+<dl>
+    <table>
+        <th>
+            <td><dt><a href="Index.html">Inicio</a></dt></td>
+            <td><dt><a href="Registro_datos.html">Registro</a></dt></td>
+            <td><dt><a href="Inicio_sesion.html">Inicio de sesión</a></dt></td>
+            <td><dt><a href="Ingreso_IMC.html">Formulario IMC</a></dt></td>
+            <td><dt><a href="Consulta_datos.html">Consulta Datos</a></dt></td>
+        </th>          
+    </table>
+</dl>
+<form action="/" method="POST">
 <hr width=100%>
     <tr>
-        <th align="left"> Buscar por ID</th>
+        <th colspan="2" align="center"> Buscar por ID</th>
     </tr>
     <tr>
-        <td align="center"> Identificación:</td>
+        <td><label> <b>Identificación:</b></label></td>
         <td><input type="int" name="identificacion" id="identificacion" placeholder="Ingrese su identificación"></td>
     </tr>
-    <tr><td align="center"><button>Buscar</button></td></tr>
+    <tr>
+        <td colspan="2" align="center"><button type="submit">Buscar</button></td>
+    </tr>
 </table>
 
 <br>
 
 <table>
     <tr>
-        <td>Ingrese nueva contraseña</td>
+        <td><label><b>Ingrese nueva contraseña:</b></label></td>
         <td><input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"></td>
     </tr>
     <tr>
-        <td>Ingrese nueva contraseña</td>
+        <td><label><b>Repita la contraseña:</b></label></td>
         <td><input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"></td>
     </tr>        
     <tr>
-        <td align="center"><button>Guardar</button></td>
+        <td colspan="2" align="center"><button type="submit">Guardar</button></td>
     </tr>
 </table>
 <br>
+</form>
 </center>
 <hr width=100%>
 <footer class="text-center text-white">
 <p class="my-1">
-    <center>Grupo 3 - C3-G15</center>
-    <center>Universidad Autónoma de Bucaramanga</center>
-    <center>2021</center>
+    <center>Grupo 3 - C3-G15<br/>
+    Universidad Autónoma de Bucaramanga<br/>
+    2021</center>
 </p>
 </footer>
 <hr width=100%>
-</body>
-</html>
 </body>
 </html>

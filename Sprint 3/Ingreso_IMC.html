@@ -6,43 +6,48 @@
 	<body>
         
     <center><H3><p style="border: ridge #9c9b9b 2px;">DATOS PARA INDICE DE MASA CORPORAL</p></H3><br>
-        <form>
-            <table>      
-                <tr>
-                    <td align="center"><button onclick="window.location.href='Index.html'">Inicio</button></td>
-                    <td align="center"><button onclick="window.location.href='Registro_datos.html'">Registro</button></td>
-                    <td align="center"><button onclick="window.location.href='Inicio_sesion.html'">Inicio de sesión</button></td>
-                    <td align="center"><button onclick="window.location.href='Ingreso_IMC.html'">Formulario IMC</button></td>
-                </tr>
-            </table>
-            <hr width=100%>
-            <table>
-                <tr> 
-                    <th> <p align="left"> Talla: </p></th> 
-                    <td><input type="txt" talla="talla" id="talla" placeholder="Ingrese su talla"></td>
-                </tr>
-                <tr> 
-                    <th><p align="left"> Peso: </p></th>
-                    <td><input type="txt" name="peso" id="peso" placeholder="Ingrese su peso"></td>
-                </tr>
-                <br><br>
-                <tr> 
-                    <th><p align="left"> Su IMC es: </p></th>
-                    <td><input type="txt" name="imc" id="imc" placeholder="IMC"></td>
-                </tr>
-                <tr><button>Generar IMC</button></tr>
-            </table>
-        </form>
+    <dl>
+        <table>
+            <th>
+                <td><dt><a href="Index.html">Inicio</a></dt></td>
+                <td><dt><a href="Registro_datos.html">Registro</a></dt></td>
+                <td><dt><a href="Inicio_sesion.html">Inicio de sesión</a></dt></td>
+                <td><dt><a href="Ingreso_IMC.html">Formulario IMC</a></dt></td>
+                <td><dt><a href="Consulta_datos.html">Consulta Datos</a></dt></td>
+            </th>          
+        </table>
+    </dl>
+    <form action="/" method="POST">
+        <hr width=100%>
+        <table>
+            <tr> 
+                <td><b>Talla:</b></td> 
+                <td><input type="txt" talla="talla" id="talla" placeholder="Ingrese su talla"></td>
+            </tr>
+            <tr> 
+                <td><b>Peso:</b></td>
+                <td><input type="txt" name="peso" id="peso" placeholder="Ingrese su peso"></td>
+            </tr>
+            <br><br>
+            <tr> 
+                <td><b>Su IMC es:</b></td>
+                <td><input type="txt" name="imc" id="imc" placeholder="IMC"></td>
+            </tr>
+            <tr>
+                <td><button>Generar IMC</button></td>
+            </tr>
+        </table>
+    </form>
 
     </center>
-<hr width=100%>
-<footer class="text-center text-white">
+    <hr width=100%>
+    <footer class="text-center text-white">
     <p class="my-1">
         <center>Grupo 3 - C3-G15<br>
         Universidad Autónoma de Bucaramanga<br>
         2021</center>
     </p>
-</footer>
-<hr width=100%>
-</body>
+    </footer>
+    <hr width=100%>
+    </body>
 </html>
