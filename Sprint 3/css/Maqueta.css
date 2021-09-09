@@ -6,9 +6,10 @@
 .item0 {
   display: grid;
   grid-template-areas: 
-  'encabezado encabezado'
-  'menus principal'
-  'pie pie';
+  'encabezado encabezado encabezado encabezado'
+  'menus menus menus menus'
+  'principal principal principal principal'
+  'pie pie pie pie';
 }
 
 header {
