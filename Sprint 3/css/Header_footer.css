@@ -28,7 +28,10 @@ ul {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
+    background-color: rgba(255, 0, 0, 0.575);
+  }
+
+  .active {
     background-color: rgba(255, 0, 0, 0.575);
   }
