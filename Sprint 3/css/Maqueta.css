@@ -1,12 +1,13 @@
 .item1 {grid-area: encabezado;}
 .item2 {grid-area: menus;}
-.item3 {grid-area: principal;}
+.item3 {grid-area: principal;
+  color: white;}
 .item4 {grid-area: pie;}
 
 .item0 {
   display: grid;
   grid-template-areas: 
-  'encabezado encabezado encabezado encabezado'
+  'encabezado encabezado encabezado encabezado '
   'menus menus menus menus'
   'principal principal principal principal'
   'pie pie pie pie';
@@ -15,6 +16,7 @@
 header {
     font-family: verdana;
     font-size: 20px;
+    color: cornsilk;
 }
 
 footer {
@@ -22,6 +24,7 @@ footer {
     font-size: 15px;
     text-align: center;
     height: 4rem;
+    color: cornsilk
 }
 
 ul {
@@ -29,12 +32,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(32, 32, 32);
+    color: cornsilk
   }
   
 li {
     float: left;
-  }
+      }
   
 li a {
     display: block;
