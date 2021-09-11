@@ -1,7 +1,8 @@
 .item1 {grid-area: encabezado;}
 .item2 {grid-area: menus;}
 .item3 {grid-area: principal;
-  color: white;}
+  color: white;
+  margin-inline: 5%;}
 .item4 {grid-area: pie;}
 .item5 {grid-area: firma;
   color:rgb(56, 55, 55);}
