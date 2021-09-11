@@ -1,8 +1,12 @@
 body { background: url(../img/fondob.png);
-    background-size: 80%;
+    background-size: 100%;
 }
 
 h1 {
     color: white;
     text-align: center;
+}
+
+.boton { 
+    background-image: linear-gradient(to left, #ff2339,#b80012,#ff2339);
 }
