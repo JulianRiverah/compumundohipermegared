@@ -58,4 +58,6 @@ li a:hover {
     background-color: rgba(255, 0, 0, 0.575);
   }
 
- 
+el-resultado{
+  color: bisque;
+}
