@@ -2,49 +2,55 @@
 <html>
 	<head>
 		<title>Inicio</title>
-        <link rel="stylesheet" href="css/CSSPrueba.css"/>
-        <link rel="stylesheet" href="css/Header_footer.css"/>
+        <link rel="stylesheet" href="css/Maqueta.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	</head>
 	<body>
-    <center>
-    <header><H3><p style="border: ridge #9c9b9b 2px;">INICIO DE SESIÓN</p></H3><br></header>
-    
-    <ul>
-        <li><a href="Index.html">Inicio</a></li>
-        <li><a href="Registro_datos.html">Registro</a></li>
-        <li class="active"><a href="Inicio_sesion.html">Inicio de sesión</a></li>
-        <li><a href="Ingreso_IMC.html">Formulario IMC</a></li>
-        <li><a href="Consulta_datos.html">Consulta Datos</a></li>
-        <li style="float:right"><a class="active" href="#about">About</a></li>
-    </ul>
-    <hr width=100%>
-    <form action="/" method="POST">
-    <table>
-        <tr> 
-            <td> <label> <b>Identificación: </b></label></td>
-            <td> <input type="int" name="identificacion" id="identificacion" placeholder="Ingrese su identificación"></td>
-        </tr>
-        <tr> 
-            <td><label> <b>Contraseña: </b></label></td>
-            <td> <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"><button type="submit">Ingresar</button></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"><a href="Restablecer_clave.html">Recuperar contraseña</a></td>
-        </tr>
-    </table>
-    </form>
-    </center>
-<hr width=100%>
-<footer class="text-center text-white">
-    <p class="my-1">
-        <center>Grupo 3 - C3-G15<br>
-        Universidad Autónoma de Bucaramanga<br>
-        2021</center>
-    </p>
-</footer>
-<hr width=100%>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <H3><p style="border: ridge #9c9b9b 2px;">INICIO DE SESIÓN</p></H3><br>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="Index.html">Inicio</a></li>
+                        <li><a href="Registro_datos.html">Registro</a></li>
+                        <li class="active"><a href="Inicio_sesion.html">Inicio de sesión</a></li>
+                        <li><a href="Ingreso_IMC.html">Formulario IMC</a></li>
+                        <li><a href="Consulta_datos.html">Consulta Datos</a></li>
+                        <li style="float:right"><a class="active" href="#about">About</a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form action="/" method="POST">
+                        <input type="int" name="identificacion" id="identificacion" placeholder="Ingrese su identificación">
+                        <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+                        <button class="button" style="vertical-align:middle" type="submit">><span>Ingresar</span></button>
+                        <a href="Restablecer_clave.html">Recuperar contraseña</a>
+                    </form>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <footer class="text-center text-white">
+                        <p class="my-1">
+                            Grupo 3 - C3-G15<br>
+                            Universidad Autónoma de Bucaramanga<br>
+                            2021
+                        </p>
+                    </footer>
+                    <hr>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
