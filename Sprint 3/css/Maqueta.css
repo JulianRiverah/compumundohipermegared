@@ -3,6 +3,8 @@
 .item3 {grid-area: principal;
   color: white;}
 .item4 {grid-area: pie;}
+.item5 {grid-area: firma;
+  color:rgb(56, 55, 55);}
 
 .item0 {
   display: grid;
@@ -21,7 +23,7 @@ header {
 
 footer {
     font-family: verdana;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     height: 4rem;
     color: cornsilk
