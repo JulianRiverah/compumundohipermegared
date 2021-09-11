@@ -16,6 +16,23 @@
   'pie pie pie pie';
 }
 
+body { background: url(../img/fondob.png);
+  background-size: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.boton { 
+  background-image: linear-gradient(to left, #ff2339,#b80012,#ff2339);
+}
+
+.btn:hover { 
+  background-position: right;
+}
+
 header {
     font-family: verdana;
     font-size: 20 px;
@@ -111,6 +128,7 @@ li a:hover {
   font-family: 'calibri';
   color: white;
   box-shadow: 7px 13px 37px #000;
+  align-items: center;
 }
 
 .form-register h4 {
@@ -155,4 +173,5 @@ li a:hover {
   color: white;
   margin: 16px 0;
   font-size: 16px;
+  align-items: center;
 }
