@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>Inicio</title>
-        <link rel="stylesheet" href="css/Header_footer.css"/>
         <link rel="stylesheet" href="css/Maqueta.css"/>
         <script src="funciones.js" type="text/javascript"></script>
         <meta charset="UTF-8">
@@ -21,21 +20,16 @@
         <li style="float:right"><a class="active" href="#about">About</a></li>
     </ul>
     <form action="/" method="POST" ></form>
-        <table>
-            <tr> 
-                <label>Facultad: </label>
+    <section class="form-register">
+                <label>Facultad: </label><br>
                 <select name="Facultad" id="Facultad">
                     <option value=0 selected>Seleccione una Facultad</option>
                     <option value="Humanidades">Humanidades</option>
                     <option Value="Ciencias aplicadas">Ciencias aplicadas</option>
-                </select> 
-            </tr>
-            <tr>
-                <br>
-                <button  class="button" style="vertical-align:middle" type="button" onclick="imc();">Buscar</button>
-            </tr>
-        </table>
-    <br>
+                </select> <br>
+        
+                <button  class="button" style="vertical-align:middle" type="button" onclick="imc();"><span>Buscar</span></button>
+            </section>
     </form >
     </center>
 <div class="item4">
