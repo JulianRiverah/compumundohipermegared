@@ -1,0 +1,43 @@
+.menu{
+    display: block;
+}
+
+.capa{
+    color: aqua;
+    padding: 4px;
+    margin: 8px;
+    display: none;
+}
+
+.boton{
+    background-color: beige;
+    padding: 2px;
+    margin: 1px;
+    display: block;
+}
+
+.boton:hover{
+    background-color: blue;
+}
+
+@media only screen and (min-width : 900px){
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .capa{
+        display: block;
+    }
+
+    .capa:hover{
+        color: #000000;
+    }
+    
+    .boton{
+        background-color: beige;
+        padding: 2px;
+        margin: 1px;
+        display: none;
+    }
+}
