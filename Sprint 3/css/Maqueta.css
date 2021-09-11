@@ -2,7 +2,7 @@
 .item2 {grid-area: menus;}
 .item3 {grid-area: principal;
   color: white;
-margin-inline: 1.5%;}
+  margin-inline: 1.5%;}
 .item4 {grid-area: pie;}
 .item5 {grid-area: firma;
   color:rgb(56, 55, 55);}
@@ -37,6 +37,7 @@ header {
     font-family: verdana;
     font-size: 20 px;
     color: cornsilk;
+    margin-top: 1%;
 }
 
 footer {
