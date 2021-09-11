@@ -10,3 +10,7 @@ h1 {
 .boton { 
     background-image: linear-gradient(to left, #ff2339,#b80012,#ff2339);
 }
+
+.btn:hover { 
+    background-position: right;
+}
