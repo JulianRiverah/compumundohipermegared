@@ -1,53 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    
+  
 		<title>Inicio</title>
         <link rel="stylesheet" href="css/CSSPrueba.css"/>
         <link rel="stylesheet" href="css/Header_footer.css"/>
         <link rel="stylesheet" href="css/Maqueta.css"/>
         <script src="funciones.js" type="text/javascript"></script>
-        <style>
-            .button {
-              display: inline-block;
-              border-radius: 4px;
-              background-color: #ff1616b9;
-              border: none;
-              color: #FFFFFF;
-              text-align: center;
-              font-size: 15px;
-              padding: 15px;
-              width: 150px;
-              transition: all 0.5s;
-              cursor: pointer;
-              margin: 5px;
-            }
-            
-            .button span {
-              cursor: pointer;
-              display: inline-block;
-              position: relative;
-              transition: 0.5s;
-            }
-            
-            .button span:after {
-              content: '\00bb';
-              position: absolute;
-              opacity: 0;
-              top: 0;
-              right: -20px;
-              transition: 0.5s;
-            }
-            
-            .button:hover span {
-              padding-right: 25px;
-            }
-            
-            .button:hover span:after {
-              opacity: 1;
-              right: 0;
-            }
-            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          
 	</head>
 	<body>
     <center>
@@ -61,12 +24,20 @@
         <li style="float:right"><a class="active" href="#about">About</a></li>
     </ul>
     <form id="miFormulario" name="" method="post">
-        <input type="number" name="" id="valor1" autofocus placeholder="Escribe tu talla en cm">
-        <br><br/>
-        <input type="number" name="" id="valor2" autofocus placeholder="Escribe tu peso en Kg">
-        <br><br/>              
-        <button  type="button" onclick="imc();">IMC </button>
-        <p >El resultado de IMC es: <span id="el-resultado"></span> </p>
+    <section class="form-register">
+      <h4>Formulario IMC</h4>
+      <input class="controls" type="number" name="" id="valor1" autofocus placeholder="Escribe tu talla en Metros">
+      <input class="controls" type="number" name="" id="valor2" autofocus placeholder="Escribe tu peso en Kg">
+      
+      <p>Bienestar Universitario UNAB</a></p>
+      <button  class="button" style="vertical-align:middle" type="button" onclick="imc();"><span>IMC</span></button>
+  </section>    
+
+  <section class="form-register">
+    <H4 >El resultado de IMC es:  </H4>
+    <H4 id="resultado"> <span id="el-resultado"></span> Kg/m<sup>2</sup></H4> 
+    
+  </section>
       </form>
 
     </center>
