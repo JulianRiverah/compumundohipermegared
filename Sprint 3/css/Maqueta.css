@@ -57,6 +57,7 @@ li a {
   
 li a:hover {
     background-color: rgba(255, 0, 0, 0.575);
+    color: #000;
   }
 
 .active {
