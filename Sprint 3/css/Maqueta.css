@@ -120,7 +120,7 @@ li a:hover {
   right: 0;
 }
 .form-register {
-  width: auto;
+  width: 400px;
   background: #24303c6b;
   padding: 30px;
   margin: auto;
@@ -129,12 +129,13 @@ li a:hover {
   font-family: 'calibri';
   color: white;
   box-shadow: 7px 13px 37px #000;
-  align-items: center;
+  text-align:center;
 }
 
 .form-register h4 {
   font-size: 22px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .controls {
