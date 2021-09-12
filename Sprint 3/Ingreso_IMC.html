@@ -20,48 +20,52 @@
           </header>
         </div>  
       </div>
+      <div class="row">
+        <div class="col">  
+          <ul>
+              <li><a href="Index.html">Inicio</a></li>
+              <li><a href="Registro_datos.html">Registro</a></li>
+              <li><a href="Inicio_sesion.html">Inicio de sesión</a></li>
+              <li class="active"><a href="Ingreso_IMC.html">Formulario IMC</a></li>
+              <li><a href="Consulta_datos.html">Consulta Datos</a></li>
+              <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form id="miFormulario" name="" method="post">
+            <section class="form-register">
+              <h4>Formulario IMC</h4>
+              <input class="controls" type="number" name="" id="valor1" autofocus placeholder="Escribe tu talla en Metros">
+              <input class="controls" type="number" name="" id="valor2" autofocus placeholder="Escribe tu peso en Kg">
+              
+              <p>Bienestar Universitario UNAB</a></p>
+              <button  class="button" style="vertical-align:middle" type="button" onclick="imc();"><span>IMC</span></button>
+            </section>    
 
-    <ul>
-        <li><a href="Index.html">Inicio</a></li>
-        <li><a href="Registro_datos.html">Registro</a></li>
-        <li><a href="Inicio_sesion.html">Inicio de sesión</a></li>
-        <li class="active"><a href="Ingreso_IMC.html">Formulario IMC</a></li>
-        <li><a href="Consulta_datos.html">Consulta Datos</a></li>
-        <li style="float:right"><a class="active" href="#about">About</a></li>
-    </ul>
-    <form id="miFormulario" name="" method="post">
-      <section class="form-register">
-        <h4>Formulario IMC</h4>
-        <input class="controls" type="number" name="" id="valor1" autofocus placeholder="Escribe tu talla en Metros">
-        <input class="controls" type="number" name="" id="valor2" autofocus placeholder="Escribe tu peso en Kg">
-        
-        <p>Bienestar Universitario UNAB</a></p>
-        <button  class="button" style="vertical-align:middle" type="button" onclick="imc();"><span>IMC</span></button>
-      </section>    
+            <section class="form-register">
+              <h4>El resultado de IMC es:</h4>
+              <h4 id="resultado"> <span id="el-resultado"></span> Kg/m<sup>2</sup></h4>   
+            </section>
+          </form>
+        </div>
+      </div>
 
-      <section class="form-register">
-        <h4>El resultado de IMC es:</h4>
-        <h4 id="resultado"> <span id="el-resultado"></span> Kg/m<sup>2</sup></h4>   
-      </section>
-    </form>
-
-    </center>
-    <div class="item4">
-      <br/>
-      <footer>
-        Grupo 3 - C3-G15<br/>
-        Bienestar Universitario<br/>
-        Universidad Autónoma de Bucaramanga<br/>
-        2021
-      </footer>
+      <div class="row">
+        <div class="col">
+          <footer>
+            Grupo 3 - C3-G15<br/>
+            Bienestar Universitario<br/>
+            Universidad Autónoma de Bucaramanga<br/>
+            2021
+          </footer>
+          <small><p align="right">
+            <br/>
+            <b>Desarrollado por: compumundohipermegared</b>
+          </small></p>
+        </div>
+      </div>
   </div>
-  <div class="item5">
-    <small><p align="right">
-        <br/>
-        <b>Desarrollado por: compumundohipermegared</b>
-    </small></p>
-  </div>
-  </div>
-</div>
   </body>
 </html>
