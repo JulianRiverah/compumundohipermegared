@@ -13,6 +13,7 @@ h1 {
 
 .btn:hover { 
   background-position: right;
+  color: #000;
 }
 
 header {
@@ -23,11 +24,14 @@ header {
 }
 
 footer {
+    position:inherit;
+    bottom: 0;
+    width: 100%;
     font-family: verdana;
     font-size: 14px;
     text-align: center;
     height: 4rem;
-    color: cornsilk
+    color: cornsilk;    
 }
 
 ul {
@@ -158,4 +162,9 @@ li a:hover {
   margin: 16px 0;
   font-size: 16px;
   align-items: center;
+}
+
+.content {
+  width:100%;
+  height: 100px;
 }
