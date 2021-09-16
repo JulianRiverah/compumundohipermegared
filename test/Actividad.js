@@ -1,10 +1,3 @@
-function cambio_funcion(){
-    var elemento = document.getElementById("uno");
-    
-    if (elemento.style.display=="block"){
-        elemento.style.display="none";
-    }else{
-        elemento.style.display="block";
-    }
-
-}
+let name = prompt('¿Cual es tu nombre?');
+const currentDate = new Date();
+alert("Hola ${name}");
