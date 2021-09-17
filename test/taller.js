@@ -95,7 +95,7 @@
 
 
 
-/*PUNTO 11
+/*PUNTO 12
 
 var nombres = prompt("ingrese nombres separados de espacio");
 var values = nombres.split(" ");
