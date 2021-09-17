@@ -73,5 +73,25 @@
 // console.log(a);
 //11.	Recibir números por prompt, negativos o positivos, si se ingresa un cero (0) detener el ingreso de números y escribir en consola cuántos de los números ingresados son positivos y cuántos son negativos.
 
+// var v =[];
+// var acum = [];
+// var pos=0;
+// var neg=0;
+// var num = parseInt(prompt("Digite un numero"));
+// while(num!=0){
+//     acum = v.push(num);
+//     var num = parseInt(prompt("Digite un numero"));
+// }
+// alert(`Los numeros ingresados son: ${v}`);
+
+// for (var a of v){
+//     if (a > 0){
+//         pos++;
+//     }else{
+//         neg++
+//     }
+// }
+// alert(`Se ingresaron ${pos} numeros positivos y ${neg} negativos`);
+
 
 
