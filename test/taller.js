@@ -95,3 +95,13 @@
 
 
 
+/*PUNTO 11
+
+var nombres = prompt("ingrese nombres separados de espacio");
+var values = nombres.split(" ");
+
+for (var i of values){
+    if (i.length>= 6){
+        alert(i);
+    }
+}*/
