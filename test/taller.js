@@ -71,6 +71,7 @@
 //10.	Haciendo uso de var generar un error de variable no definida.
 // var a;
 // console.log(a);
-//
+//11.	Recibir números por prompt, negativos o positivos, si se ingresa un cero (0) detener el ingreso de números y escribir en consola cuántos de los números ingresados son positivos y cuántos son negativos.
+
 
 
