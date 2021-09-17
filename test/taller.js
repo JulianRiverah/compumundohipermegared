@@ -74,7 +74,7 @@
 //11.	Recibir números por prompt, negativos o positivos, si se ingresa un cero (0) detener el ingreso de números y escribir en consola cuántos de los números ingresados son positivos y cuántos son negativos.
 
  /* PUNTO 11
- 
+
  var v =[];
  var acum = [];
  var pos=0;
