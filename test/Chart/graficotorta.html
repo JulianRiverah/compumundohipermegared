@@ -11,7 +11,7 @@
         google.charts.load('current', {packages: ['corechart']});
         google.charts.setOnLoadCallback(drawChart);
         
-        function drawChart(){
+        function loadData(){
             var comida = new google.visualization.DataTable();
             comida.addColumn('string', 'Comida');
             comida.addColumn('number', 'Estudiantes');
@@ -22,14 +22,18 @@
                 ['Empanada', 2],
                 ['Other', 4]
             ]);
+            return comida;
+        }
 
-            // Set chart options
+        // Set chart options
+        function drawChart(){
+            var data = loadData();
             var options = {'title':'Comidas preferidas',
-                     'width':400,
-                     'height':300};
-
+                    'width':400,
+                    'height':300};
+        
             var chart = new google.visualization.PieChart(document.getElementById("contenedor-grafico"));
-            chart.draw(comida, options);
+            chart.draw(data, options);
         }
 
         // function drawChart() {
