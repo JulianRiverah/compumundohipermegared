@@ -30,7 +30,8 @@
             var data = loadData();
             var options = {'title':'Comidas preferidas',
                     'width':400,
-                    'height':300};
+                    'height':300,
+                    'pieHole':0.4};
         
             var chart = new google.visualization.PieChart(document.getElementById("contenedor-grafico"));
             chart.draw(data, options);

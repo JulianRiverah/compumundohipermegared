@@ -8,18 +8,23 @@
 	</head>
 	<body>
     <div class="container">
+        <!-- Header -->
         <div class="row">
             <div class="col">
                 <header>
-                    <br><br><br><br><br>
                 </header>
             </div>
         </div>
+        <!-- /Header -->
+
+        <!-- Menu -->
         <div class="row">
             <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="https://www.unab.edu.co/">UNAB</a>
+                      <a class="navbar-brand" href="https://www.unab.edu.co/">
+                          <img src="img/Logo_unab.png" alt="">
+                        </a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -28,14 +33,11 @@
                           <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="Registro_datos.html">Registro</a>
-                          </li>
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Inicio de Sesión
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                               <li><a class="dropdown-item" href="Inicio_sesion.html">Inicion de sesión</a></li>
                               <li><a class="dropdown-item" href="Restablecer_clave.html">Restablecer contraseña</a></li>
                               <li><hr class="dropdown-divider"></li>
@@ -46,7 +48,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Encuestas
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                               <li><a class="dropdown-item" href="Ingreso_IMC.html">IMC</a></li>
                             </ul>
                           </li>
@@ -54,29 +56,19 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Reportes
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                               <li><a class="dropdown-item" href="Consulta_datos.html">Encuesta IMC</a></li>
                             </ul>
                           </li>
                         </ul>
-                        <form class="d-flex">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                          <button class="button" type="submit"><span>Search</span>></button>
-                        </form>
                       </div>
                     </div>
                   </nav>
-                <!-- <ul>
-                    <li class="active"><a href="Index.html">Inicio</a></li>
-                    <li><a href="Registro_datos.html">Registro</a></li>
-                    <li><a href="Ingreso_IMC.html">Formulario IMC</a></li>
-                    <li><a href="Consulta_datos.html">Consulta Datos</a></li>
-                    <li class="active" style="float:right"><a href="Inicio_sesion.html">Inicio de sesión</a></li>
-                    <li style="float:right"><a href="Index.html">About</a></li>                    
-                </ul> -->
             </div>
         </div>
+        <!-- /Menu -->
+
+        <!-- Main -->
         <div class="row">
             <div class="col">
                 <section class="form-register" style="width: auto;">
@@ -88,7 +80,9 @@
             </section>
             </div>
         </div>
-        
+        <!-- /Main -->
+
+        <!-- Footer -->
         <div class="row">
             <div class="col">
                 <footer>
@@ -100,9 +94,9 @@
                         <b>Desarrollado por: compumundohipermegared</b>
                     </small></p>
                 </footer>
-                
             </div>
         </div>
+        <!-- /Footer -->
     </div>
     </body>
 </html>
