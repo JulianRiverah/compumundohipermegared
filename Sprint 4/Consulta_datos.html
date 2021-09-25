@@ -9,7 +9,84 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>          
-	</head>
+	
+        <!-- grafico google -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function loadData(){
+            var comida = new google.visualization.DataTable();
+            comida.addColumn('string', 'Comida');
+            comida.addColumn('number', 'Estudiantes');
+            comida.addRows([
+                ['Ciencias Económicas, Administrativas y Contables', 5],
+                ['Ciencias de la Salud', 6],
+                ['Ciencias Sociales, Humanidades y Artes', 4],
+                ['Ciencias Jurídicas y Políticas', 2],
+                ['Ingeniería', 4],
+                ['Ciencias aplicadas', 4]
+            ]);
+            return comida;
+        }
+
+        // Set chart options
+        function drawChart(){
+            var data = loadData();
+            var options = {
+                    'backgroundColor': 'none',
+                    'legend': 'none',
+                    'title':'Respuestas por Facultades',
+                    titleTextStyle: { 
+                            fontSize: 16,
+                            color: 'white'
+                        },
+                    'width':350,
+                    'height':300};
+                    //'pieHole':0.4};
+        
+            var chart = new google.visualization.PieChart(document.getElementById("contenedor-grafico-pie"));
+            chart.draw(data, options);
+        }
+        
+        //google.charts.load('current', {packages: ['corechart']});
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart2);
+        function drawChart2() {
+        var barra = google.visualization.arrayToDataTable([
+          ['Semana', 'Inferior', 'Normal', 'Sobrepeso','Obesidad','Extrema'],
+          ['Sem1', 1000, 400, 200 ,100 ,50],
+          ['Sem2', 1170, 460, 250,500,555],
+          ['Sem3', 660, 1120, 300,578,756],
+          ['Sem4', 1030, 540, 350,450,953]
+        ]);
+
+        var options = {
+          'backgroundColor': 'none',
+          chartArea: {
+            backgroundColor: 'none'
+          },
+          titleTextStyle: { 
+                          color: 'white'
+                        },
+          chart: {
+            title: 'Resultados por semana',
+            subtitle: 'Clasificacion de IMC',
+            backgroundColor: 'none'
+          },
+          'width':350,
+          'height':300
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('contenedor-grafico-barras'));
+
+        chart.draw(barra, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <!-- /grafico google -->
+  
+   </head>
 	<body>
         <div class="container">
             <div class="row">
@@ -80,7 +157,6 @@
                                 <option Value="Ciencias aplicadas">Estudios Técnicos y Tecnológicos</option>
                                 <option Value="Ciencias aplicadas">Ingeniería</option>
                                 <option Value="Ciencias aplicadas">Ciencias aplicadas</option>
-                                <option Value="Ciencias aplicadas">Ciencias aplicadas</option>
                             </select>
                             <p>Bienestar Universitario UNAB</p>
                             <button  class="button" style="vertical-align:middle" type="button" onclick="imc();"><span>Buscar</span></button>
@@ -88,7 +164,22 @@
                 </form >
             </div>
         </div>
-        
+        <div class="row">
+          <div class="col-6">
+            <section class="form-register">
+              <div id = "contenedor-grafico-pie">
+                
+              </div>
+          </section>
+          </div>
+          <div class="col-6">
+            <section class="form-register">
+              <div id = "contenedor-grafico-barras">
+                
+              </div>
+          </section>
+          </div>
+        </div>
         <div class="row">
             <div class="col">
               <footer>
