@@ -81,6 +81,38 @@
         var chart = new google.charts.Bar(document.getElementById('contenedor-grafico-2'));
 
         chart.draw(barra, google.charts.Bar.convertOptions(options));
+
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart3);
+        function drawChart3() {
+        var barra = google.visualization.arrayToDataTable([
+          ['Facultad', 'Mujer', 'Hombre'],
+          ['Hum', 27, 20],
+          ['Ing', 30, 26],
+          ['Arq', 20, 22],
+          ['Agro', 30, 28]
+        ]);
+
+        var options = {
+          'backgroundColor': 'none',
+          chartArea: {
+            backgroundColor: 'none'
+          },
+          titleTextStyle: { 
+                          color: 'white'
+                        },
+          chart: {
+            title: 'IMC promedio por Genero',
+            subtitle: 'En facultades',
+            backgroundColor: 'none'
+          },
+          'width':350,
+          'height':300
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('contenedor-grafico-3'));
+
+        chart.draw(barra, google.charts.Bar.convertOptions(options));
       }
       google.charts.load('current', {'packages':['line']});
       google.charts.setOnLoadCallback(drawChart5);
