@@ -46,7 +46,7 @@
                     'height':300};
                     //'pieHole':0.4};
         
-            var chart = new google.visualization.PieChart(document.getElementById("contenedor-grafico-pie"));
+            var chart = new google.visualization.PieChart(document.getElementById("contenedor-grafico-1"));
             chart.draw(data, options);
         }
         
@@ -79,7 +79,7 @@
           'height':300
         };
 
-        var chart = new google.charts.Bar(document.getElementById('contenedor-grafico-barras'));
+        var chart = new google.charts.Bar(document.getElementById('contenedor-grafico-2'));
 
         chart.draw(barra, google.charts.Bar.convertOptions(options));
       }
@@ -167,19 +167,54 @@
         <div class="row">
           <div class="col-6">
             <section class="form-register">
-              <div id = "contenedor-grafico-pie">
+              <div id = "contenedor-grafico-1">
                 
               </div>
           </section>
           </div>
           <div class="col-6">
             <section class="form-register">
-              <div id = "contenedor-grafico-barras">
+              <div id = "contenedor-grafico-2">
                 
               </div>
           </section>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-6">
+            <section class="form-register">
+              <div id = "contenedor-grafico-3">
+                <span>Grafico 3</span>
+              </div>
+          </section>
+          </div>
+          <div class="col-6">
+            <section class="form-register">
+              <div id = "contenedor-grafico-4">
+                  <span>Grafico 4</span>
+              </div>
+          </section>
+          </div>
+        </div> 
+        
+        <div class="row">
+          <div class="col-6">
+            <section class="form-register">
+              <div id = "contenedor-grafico-5">
+                <span>Grafico 5</span>
+              </div>
+          </section>
+          </div>
+          <div class="col-6">
+            <section class="form-register">
+              <div id = "contenedor-grafico-6">
+                  <span>Grafico 6</span>
+              </div>
+          </section>
+          </div>
+        </div> 
+
         <div class="row">
             <div class="col">
               <footer>
