@@ -13,6 +13,38 @@
         <!-- grafico google -->
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
+
+       // grafico javier 
+
+     google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {
+          'width':350,
+          'height':300};
+      
+
+
+        var chart = new google.visualization.GeoChart(document.getElementById('contenedor-grafico-6'));
+
+        chart.draw(data, options);
+      }
+        
+         // fin-grafico-javier 
+
         google.charts.load('current', {packages: ['corechart']});
         google.charts.setOnLoadCallback(drawChart);
         
