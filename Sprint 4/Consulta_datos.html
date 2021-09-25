@@ -82,6 +82,46 @@
 
         chart.draw(barra, google.charts.Bar.convertOptions(options));
       }
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart5);
+      function drawChart5() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Día de reporte');
+        data.addColumn('number', 'Bajo peso');
+        data.addColumn('number', 'Normal');
+        data.addColumn('number', 'Sobrepeso');
+        //data.addColumn('number', 'Obesidad');
+        //data.addColumn('number', 'Obesidad grado 2');
+        //data.addColumn('number', 'Obesidad grado 3');
+        data.addRows([
+          [1,  18.5, 18.6, 25.8],
+          [2,  18.3, 24.5, 26.4],
+          [3,  18.0, 19.4, 29.7],
+          [4,  17.8, 18.8, 25.5],
+          [5,  18.3, 21.6, 27.4],
+          [6,  18.5, 23.8, 28.7],
+          [7,  17.6, 20.5, 26.6],
+          [8,  18.2, 23.2, 25.6],
+          [9,  18.2, 22.9, 29.8],
+          [10, 17.8, 19.9, 27.6],
+          [11, 17.9, 23.9, 25.7],
+          [12, 18.3, 18.4, 27.2],
+          [13, 18.5, 21.3, 28.6],
+          [14, 18.0, 21.2, 26.4]
+        ]);
+        var options = {
+          'backgroundColor': 'none',
+          chartArea: {backgroundColor: 'none'},
+          titleTextStyle: {fontSize: 16, color: 'white'},
+          chart: {
+            title: 'IMC por clasificación',
+          },
+          width: 350,
+          height: 300
+          };
+        var chart = new google.charts.Line(document.getElementById('contenedor-grafico-5'));
+        chart.draw(data, google.charts.Line.convertOptions(options));
+      }
     </script>
     <!-- /grafico google -->
   
