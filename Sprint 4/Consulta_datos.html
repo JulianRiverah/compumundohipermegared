@@ -110,15 +110,12 @@
         var options = {
           'backgroundColor': 'none',
           title: 'Edad vs. Peso comparación',
-          hAxis: {title: 'Edad', minValue: 0, maxValue: 15},
-          vAxis: {title: 'Peso', minValue: 0, maxValue: 15},
+          hAxis: {title: 'Edad', minValue: 0, maxValue: 15, textStyle: {color: 'white'},titleTextStyle: {color: 'white'}},
+          vAxis: {title: 'Peso', minValue: 0, maxValue: 15, textStyle: {color: 'white'},titleTextStyle: {color: 'white'}},
           legend: 'none',
           'width':350,
           'height':300,
-          titleTextStyle: { 
-          fontSize: 16,
-          color: 'white'
-                        }
+          titleTextStyle: {fontSize: 16,color: 'white'}
         };
 
         var chart = new google.visualization.ScatterChart(document.getElementById("contenedor-grafico-4"));
@@ -186,6 +183,9 @@
             subtitle: 'Clasificacion de IMC',
             backgroundColor: 'none'
           },
+          legend:{textStyle: {color: 'white'}},
+          hAxis: {title: 'Semana', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
+          vAxis: {title: 'Cantidad', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
           'width':350,
           'height':300
         };
@@ -217,6 +217,9 @@
             subtitle: 'En facultades',
             backgroundColor: 'none'
           },
+          legend:{textStyle: {color: 'white'}},
+          hAxis: {title: 'Facultad', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
+          vAxis: {title: 'Cantidad', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
           'width':350,
           'height':300
         };
@@ -260,6 +263,9 @@
           chart: {
             title: 'IMC por clasificación',
           },
+          legend:{textStyle: {color: 'white'}},
+          hAxis: {title: 'Día de reporte', textStyle: {color: 'white'}},
+          vAxis: {textStyle: {color: 'white'}},
           width: 350,
           height: 300
           };
