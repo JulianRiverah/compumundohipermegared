@@ -3,6 +3,8 @@ body {
   background-size: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed
 }
 
 #menu li > a {
