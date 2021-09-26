@@ -26,21 +26,21 @@
 
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
-        ['City',   'Population', 'Area'],
-        ['Bogota',      2761477,    1285.31],
-        ['Medellin',     1324110,    181.76],
-        ['Cali',    959574,     117.27],
-        ['Neiva',     907563,     130.17],
-        ['Barranquilla',   655875,     158.9]
-        
+        ['Departamento',   'Mujer', 'Hombre'],
+        ['Bogotá',          10,     15],
+        ['Antioquia',       18,     15],
+        ['Cauca',           5,      7],
+        ['Huila',           2,      1],
+        ['Atlántico',       1,      0],
+        ['Santander',       30,     32]
       ]);
 
       var options = {
         'width':350,
         'height':300,
         region: 'CO',
-        displayMode: 'markers',
-        colorAxis: {colors: ['green', 'blue']}
+        resolution: 'provinces',
+        colorAxis: {colors: ['orange', 'green']}
       };
 
       var chart = new google.visualization.GeoChart(document.getElementById('contenedor-grafico-6'));
@@ -361,6 +361,7 @@
           </div>
           <div class="col-6">
             <section class="form-register">
+              <h6>Respuestas por departamento (Genero)</h6>
               <div id = "contenedor-grafico-6">
                   <span>Grafico 6</span>
               </div>
