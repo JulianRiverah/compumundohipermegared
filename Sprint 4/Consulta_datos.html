@@ -27,20 +27,50 @@
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
         ['Departamento',   'Mujer', 'Hombre'],
-        ['Bogotá',          10,     15],
-        ['Antioquia',       18,     15],
-        ['Cauca',           5,      7],
-        ['Huila',           2,      1],
-        ['Atlántico',       1,      0],
-        ['Santander',       30,     32]
+        ['Amazonas',    0, 0],
+        ['Antioquia',   18, 10],
+        ['Arauca',      0, 0],
+        ['Atlántico',   1, 4],
+        ['Bogotá',      15, 22],
+        ['Bolívar',     4, 3],
+        ['Boyacá',      6, 1],
+        ['Caldas',      7, 3],
+        ['Caquetá',     0, 0],
+        ['Casanare',    0, 0],
+        ['Cauca',       0, 0],
+        ['Cesar',       0, 0],
+        ['Chocó',       0, 0],
+        ['Córdoba',     0, 0],
+        ['Cundinamarca',3, 4],
+        ['Guainía',     0, 0],
+        ['Guaviare',    0, 0],
+        ['Huila',       2, 1],
+        ['La Guajira',  0, 0],
+        ['Magdalena',   0, 0],
+        ['Meta',        0, 10],
+        ['Norte De Santander', 22, 10],
+        ['Nariño',      0, 0],
+        ['Putumayo',    0, 0],
+        ['Quindío',     0, 0],
+        ['Risaralda',   0, 0],
+        ['Santander',   22, 30],
+        ['Sucre',       0, 0],
+        ['Tolima',      2, 1],
+        ['Valle Del Cauca', 10, 15],
+        ['Vaupés',      0, 0],
+        ['Vichada',   0, 0]
       ]);
-
+      
       var options = {
+        legend: {textStyle: {color: 'black', fontSize: 10}},
         'width':350,
         'height':300,
         region: 'CO',
         resolution: 'provinces',
-        colorAxis: {colors: ['orange', 'green']}
+        colorAxis: {colors: ['white', 'green']},
+        backgroundColor:{fill: 'none'},
+        datalessRegionColor: 'gray',
+        displayMode: 'auto'
       };
 
       var chart = new google.visualization.GeoChart(document.getElementById('contenedor-grafico-6'));
