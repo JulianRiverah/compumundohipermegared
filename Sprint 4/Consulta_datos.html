@@ -183,7 +183,7 @@
             subtitle: 'Clasificacion de IMC',
             backgroundColor: 'none'
           },
-          legend:{textStyle: {color: 'white'}},
+          legend:{textStyle: {color: 'white', fontSize:14}},
           hAxis: {title: 'Semana', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
           vAxis: {title: 'Cantidad', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
           'width':350,
@@ -217,7 +217,7 @@
             subtitle: 'En facultades',
             backgroundColor: 'none'
           },
-          legend:{textStyle: {color: 'white'}},
+          legend:{textStyle: {color: 'white',fontSize:14}},
           hAxis: {title: 'Facultad', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
           vAxis: {title: 'Cantidad', minValue: 0, maxValue: 15, textStyle: {color: 'white'}},
           'width':350,
@@ -228,7 +228,7 @@
 
         chart.draw(barra, google.charts.Bar.convertOptions(options));
       }
-//Mío
+//Leslie
       google.charts.load('current', {'packages':['line']});
       google.charts.setOnLoadCallback(drawChart5);
       function drawChart5() {
@@ -237,9 +237,6 @@
         data.addColumn('number', 'Bajo peso');
         data.addColumn('number', 'Normal');
         data.addColumn('number', 'Sobrepeso');
-        //data.addColumn('number', 'Obesidad grado 1');
-        //data.addColumn('number', 'Obesidad grado 2');
-        //data.addColumn('number', 'Obesidad grado 3');
         data.addRows([
           [1,  18.5, 18.6, 25.8],
           [2,  18.3, 24.5, 26.4],
@@ -263,7 +260,7 @@
           chart: {
             title: 'IMC por clasificación',
           },
-          legend:{textStyle: {color: 'white'}},
+          legend:{textStyle: {color: 'white', fontSize: 14}},
           hAxis: {title: 'Día de reporte', textStyle: {color: 'white'}},
           vAxis: {textStyle: {color: 'white'}},
           width: 350,
@@ -357,14 +354,14 @@
           <div class="col-6">
             <section class="form-register">
               <div id = "contenedor-grafico-1">
-                <span>Grafico 1</span>
+                
               </div>
           </section>
           </div>
           <div class="col-6">
             <section class="form-register">
               <div id = "contenedor-grafico-2">
-                <span>Grafico 2</span>
+                
               </div>
           </section>
           </div>
@@ -374,14 +371,14 @@
           <div class="col-6">
             <section class="form-register">
               <div id = "contenedor-grafico-3">
-                <span>Grafico 3</span>
+                
               </div>
           </section>
           </div>
           <div class="col-6">
             <section class="form-register">
               <div id = "contenedor-grafico-4">
-                  <span>Grafico 4</span>
+                  
               </div>
           </section>
           </div>
@@ -391,15 +388,15 @@
           <div class="col-6">
             <section class="form-register">
               <div id = "contenedor-grafico-5">
-                <span>Grafico 5</span>
+                
               </div>
           </section>
           </div>
           <div class="col-6">
             <section class="form-register">
-              <h6>Respuestas por departamento (Genero)</h6>
+              Respuestas por departamento (Genero)
               <div id = "contenedor-grafico-6">
-                  <span>Grafico 6</span>
+                  
               </div>
           </section>
           </div>
